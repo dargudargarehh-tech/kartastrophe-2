@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartastrophe 2: Sector 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bg-overlay">
+        <h1>KARTASTROPHE 2</h1>
+        <div id="leaderboard">
+            <div class="lb-header">SECTOR RANKINGS</div>
+            <div class="lb-row"><span>1. V_SHAPER</span><span>4,250m</span></div>
+            <div class="lb-row"><span>2. GHOST_RIDER</span><span>3,100m</span></div>
+            <div class="lb-row player-rank"><span>YOU:</span><span id="best-dist">0m</span></div>
+        </div>
+        <div id="start-btn">[ INITIATE RACE ]</div>
+    </div>
+
+    <div id="game-over">
+        <div id="game-over-content">
+            <h1 class="go-title">CORE_OFFLINE</h1>
+            <p class="go-text">"THE SHAPER FALLS, THE SECTOR LAUGHS"</p>
+            <div class="btn-group">
+                <button id="retry-btn">RE-SYNC</button>
+                <button id="title-btn">RETURN TO BASE</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="ui-layer">
+        <div class="rank-hud">
+            <div class="label">RANK</div>
+            <div id="pos-display">1/5</div>
+        </div>
+        <div id="mission-log">
+            <div id="main-task">SCANNING...</div>
+            <div id="side-task">INITIALIZING MISSIONS...</div>
+        </div>
+        <div id="minimap"></div>
+        <div id="stats">0 KM/H</div>
+    </div>
+
+    <canvas id="c"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
